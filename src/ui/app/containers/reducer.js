@@ -11,7 +11,10 @@ import { DISPATCH_ACTIONS } from './constants';
 
 // TODO: Initialize more things in the Redux store if needed
 const initialState = fromJS({
-  luckyNumber: -1
+  luckyNumber: -1,
+  firstName: '',
+  lastName: '',
+  username: ''
 });
 
 function reducer(state = initialState, action) {
