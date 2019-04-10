@@ -38,7 +38,7 @@ class Welcome extends React.PureComponent {
     const { dispatch } = this.props;
 
     // TODO: Get the form values and invoke the service layer
-    console.log(JSON.stringify(values));
+    console.log(values);
     // dispatch(???);
   }
 
@@ -50,7 +50,7 @@ class Welcome extends React.PureComponent {
         </Helmet>
 
         <div className="mt5 pa4 center w-25 bg-light-gray">
-          <WelcomeForm onSubmit={this.submit} />
+          <WelcomeForm handleSubmit={this.submit} />
         </div>
       </article>
     );
