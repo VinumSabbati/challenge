@@ -8,6 +8,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
+// Add import for LuckyNumberDisplay
+import LuckyNumberDisplay from '../../components/LuckyNumberDisplay/LuckyNumberDisplay';
 
 import { CONTAINER_KEY } from '../constants';
 
@@ -25,8 +27,8 @@ class LuckyNumber extends React.PureComponent {
   }
 }
 
-const mapStateToProps = () => ({
+const mapStateToProps = (state) => ({
   // TODO: Get values from Redux store
 });
 
-export default connect()(LuckyNumber);
+export default connect(mapStateToProps)(LuckyNumber);
