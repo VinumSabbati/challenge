@@ -21,7 +21,7 @@ class WelcomeForm extends React.PureComponent {
     const { handleSubmit } = this.props;
 
     return (
-      <form className="flex flex-column">
+      <form className="flex flex-column" onSubmit={handleSubmit}>
         {/* TODO: Add elements to form to collect user input */}
         <Field
           name="???"
