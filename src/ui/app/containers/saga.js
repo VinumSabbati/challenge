@@ -23,8 +23,11 @@ export function* getLuckyNumber({ username }) {
     const result = yield call(request, requestUrl);
 
     // TODO: Do stuff with the result
+    // Put result into redux state using put
+    // Use push to direct user to /lucky
   } catch (err) {
     // TODO: Bonus points for some error handling
+    // Show an error if request fails
   }
 }
 
