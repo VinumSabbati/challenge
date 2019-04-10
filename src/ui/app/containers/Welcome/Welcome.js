@@ -38,7 +38,7 @@ class Welcome extends React.PureComponent {
     const { dispatch } = this.props;
 
     // TODO: Get the form values and invoke the service layer
-    console.log(values);
+    console.log(JSON.stringify(values));
     // dispatch(???);
   }
 
