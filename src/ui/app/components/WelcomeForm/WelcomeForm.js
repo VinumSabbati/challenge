@@ -57,5 +57,5 @@ WelcomeForm.propTypes = {
 // add validate function to reduxForm
 export default reduxForm({
   form: 'welcome',
-  validate,
+  // validate,
 })(WelcomeForm);
