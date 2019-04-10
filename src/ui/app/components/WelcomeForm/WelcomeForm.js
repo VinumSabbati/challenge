@@ -28,6 +28,16 @@ class WelcomeForm extends React.PureComponent {
           component={RFTextField}
           label="First Name"
         />
+        <Field
+          name="lastName"
+          component={RFTextField}
+          label="Last Name"
+        />
+        <Field
+          name="username"
+          component={RFTextField}
+          label="Username"
+        />
         <div className="center mt3">
           <Button variant="contained" color="primary" type="submit">
             Submit
