@@ -34,10 +34,17 @@ class Welcome extends React.PureComponent {
    * @see https://redux-form.com/7.4.2/docs/gettingstarted.md/#step-4-of-4-reacting-to-submit
    * @param {*} values An immutable map of the Redux Form values
    */
+
+  // For some reason I can't seem to access form values here. Need to figure out why.
   submit(values) {
+    values.preventDefault();
     const { dispatch } = this.props;
 
     // TODO: Get the form values and invoke the service layer
+    // get values from redux form
+    // pass username to getLuckyNumber function
+    // wait for response / check for error
+    // if valid, change route to /lucky and display the data
     console.log(values);
     // dispatch(???);
   }

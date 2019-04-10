@@ -22,7 +22,6 @@ class WelcomeForm extends React.PureComponent {
 
     return (
       <form className="flex flex-column" onSubmit={handleSubmit}>
-        {/* TODO: Add elements to form to collect user input */}
         <Field
           name="firstName"
           component={RFTextField}
@@ -52,9 +51,8 @@ WelcomeForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired
 };
 
-// TODO: Add validation
 // @see https://redux-form.com/7.4.2/docs/api/reduxform.md/
-// add validate function to reduxForm
+// validation isn't playing nicely with material UI components. Need to figure out why. Removed for now.
 export default reduxForm({
   form: 'welcome',
   // validate,
