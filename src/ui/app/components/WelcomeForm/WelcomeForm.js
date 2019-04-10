@@ -11,6 +11,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { reduxForm, Field } from 'redux-form/immutable';
 import Button from '@material-ui/core/Button';
+// import validation function
+import { validate } from "./validate";
 
 import { RFTextField } from 'components/ReduxFormFields/RFTextField';
 
@@ -42,6 +44,8 @@ WelcomeForm.propTypes = {
 
 // TODO: Add validation
 // @see https://redux-form.com/7.4.2/docs/api/reduxform.md/
+// add validate function to reduxForm
 export default reduxForm({
   form: 'welcome',
+  validate,
 })(WelcomeForm);
