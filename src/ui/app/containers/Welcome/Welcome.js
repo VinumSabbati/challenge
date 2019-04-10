@@ -37,7 +37,6 @@ class Welcome extends React.PureComponent {
 
   // For some reason I can't seem to access form values here. Need to figure out why.
   submit(values) {
-    values.preventDefault();
     const { dispatch } = this.props;
 
     // TODO: Get the form values and invoke the service layer
